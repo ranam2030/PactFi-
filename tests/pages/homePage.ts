@@ -23,7 +23,7 @@ export class homePage extends basePage{
         this.filterBtn = page.getByRole('button', { name: 'Filter by name' });
         this.introduced = page.getByRole('cell', { name: 'Introduced' });
         this.discontinued = page.getByRole('cell', { name: 'Discontinued' });
-        this.company = page.getByRole('cell', { name: 'Company' });
+        this.company = page.locator('//a[normalize-space()="Company"]');
         this.nextBtn = page.getByRole('link', { name: 'Next →' });
         this.displayPage = page.getByText('Displaying 11 to 20 of');
         this.previousBtn = page.getByRole('link', { name: '← Previous' });
